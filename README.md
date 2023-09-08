@@ -1,7 +1,7 @@
-# experimental and unstable
-# meta programming and builtin.object
-# create and not yet remove fields
 
+# meta programming and builtin.object
+> this is just an example not a library to use as-is
+```
 fn main() raises:
     var db = Db()
     
@@ -22,3 +22,4 @@ fn main() raises:
     db.dump()
 
     print(db.unique_id_exist(car_obj["owner"][0]))
+```
