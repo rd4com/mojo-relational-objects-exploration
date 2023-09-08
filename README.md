@@ -16,9 +16,11 @@ fn main() raises:
     var car_obj = db.object("car")
     car_obj["wheels"] = 4
     car_obj["owner"] = user1.unique_id()
+    car_obj["dynamic"] = "string"
 
     db.dump()
     db.delete(user1^)
+    car_obj["dynamic"] = 1.0
     db.dump()
 
     print(db.unique_id_exist(car_obj["owner"][0]))
