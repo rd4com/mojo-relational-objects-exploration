@@ -23,3 +23,9 @@ fn main() raises:
 
     print(db.unique_id_exist(car_obj["owner"][0]))
 ```
+# so far
+- [x] create objects with unique ids
+- [x] remove objects from "db"
+- [x] add fields
+- [x] change values
+- [x] change field type
