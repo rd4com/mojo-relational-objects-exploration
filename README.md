@@ -35,6 +35,12 @@ fn main() raises:
 [['_type', 'car'], ['uuid', 1], ['wheels', [4]], ['owner', [0]], ['dynamic', [1.0]]]
 False
 ```
+# the heap
+```
+HEAP SUMMARY:
+    in use at exit: 0 bytes in 0 blocks
+    total heap usage: 456 allocs, 456 frees, 281,587 bytes allocated
+```
 # so far
 - [x] create objects with unique ids
 - [x] remove objects from "db"
