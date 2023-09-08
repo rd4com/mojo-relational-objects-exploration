@@ -25,6 +25,16 @@ fn main() raises:
 
     print(db.unique_id_exist(car_obj["owner"][0]))
 ```
+# output
+```
+[[1, 2, 3, 4, 5]]
+------db_dump-------
+[['_type', 'user'], ['uuid', 0], ['name', ['bob']], ['favorite numbers', [[1, 2, 3, 4, 5]]]]
+[['_type', 'car'], ['uuid', 1], ['wheels', [4]], ['owner', [0]], ['dynamic', ['string']]]
+------db_dump-------
+[['_type', 'car'], ['uuid', 1], ['wheels', [4]], ['owner', [0]], ['dynamic', [1.0]]]
+False
+```
 # so far
 - [x] create objects with unique ids
 - [x] remove objects from "db"
