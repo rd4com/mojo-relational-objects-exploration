@@ -1,7 +1,8 @@
-
-# meta programming and builtin.object
+# meta-programming and Object()
 > this is just an example not a library to use as-is
-```
+
+> ⚠️ there is a bug
+```python
 fn main() raises:
     var db = Db()
     
@@ -26,7 +27,7 @@ fn main() raises:
     print(db.unique_id_exist(car_obj["owner"][0]))
 ```
 # output
-```
+```python
 [[1, 2, 3, 4, 5]]
 ------db_dump-------
 [['_type', 'user'], ['uuid', 0], ['name', ['bob']], ['favorite numbers', [[1, 2, 3, 4, 5]]]]
@@ -34,16 +35,4 @@ fn main() raises:
 ------db_dump-------
 [['_type', 'car'], ['uuid', 1], ['wheels', [4]], ['owner', [0]], ['dynamic', [1.0]]]
 False
-```
-# the heap
-```
-HEAP SUMMARY:
-    in use at exit: 0 bytes in 0 blocks
-    total heap usage: 456 allocs, 456 frees, 281,587 bytes allocated
-```
-# so far
-- [x] create objects with unique ids
-- [x] remove objects from "db"
-- [x] add fields
-- [x] change values
-- [x] change field type
+
